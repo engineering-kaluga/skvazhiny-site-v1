@@ -630,8 +630,6 @@ body {
           justify-content: space-between; }
   .table-header .table-cell:nth-child(2), .table-row .table-cell:nth-child(2) {
     text-align: right; }
-  .table-header .table-cell:first-child p:nth-child(n+2), .table-row .table-cell:first-child p:nth-child(n+2) {
-    margin-left: 1em; }
 
 .table-header {
   border-bottom: 2px solid #00001f;
@@ -646,12 +644,24 @@ body {
   .table-row:last-child {
     border: none; }
 
+.no-border {
+  margin-top: 0px;
+  border: none;
+  padding-bottom: 0px; }
+
+.last-in-group {
+  margin-top: 0px; }
+
+.cell-indented > p {
+  padding-left: 1em; }
+
 .table-cell {
   font-size: 14px;
   min-width: 50%; }
-  .table-cell p {
+  .table-cell > p {
     font-size: 14px;
-    margin: 0px; }
+    margin: 0px;
+    line-height: normal; }
 
 .order {
   background-color: #00af00;
@@ -685,7 +695,8 @@ body {
     width: 90%; }
     .order form label {
       margin-bottom: 10px;
-      display: block; }
+      display: block;
+      font-size: 16px; }
       .order form label span {
         display: block;
         margin-top: 5px; }
@@ -717,3 +728,52 @@ body {
         cursor: pointer; }
         .order form .button-wrap .button-send-order:hover {
           background-color: #000085; }
+
+@media only screen and (max-width: 990px) {
+  .hello-title {
+    text-align: center; } }
+
+@media only screen and (max-width: 768px) {
+  .order .columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%; }
+    .order .columns-half {
+      width: 100%; }
+      .order .columns-half form {
+        width: 100%; } }
+
+@media only screen and (max-width: 680px) {
+  .text .columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+    .text .columns-half {
+      width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  .navigation-container .navigation {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .navigation-container .navigation-item {
+      font-size: 20px; }
+    .navigation-container .navigation-item:last-child {
+      margin-right: 20px; }
+  .hello-title {
+    font-size: 36px; }
+    .hello-title-catch {
+      font-size: 20px; }
+  .button-container > * > a {
+    font-size: 16px; }
+  .columns-half p {
+    font-size: 14px; }
+  .order form label {
+    font-size: 14px; } }

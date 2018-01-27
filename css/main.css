@@ -777,3 +777,38 @@ body {
     font-size: 14px; }
   .order form label {
     font-size: 14px; } }
+
+@media only screen and (max-width: 480px) {
+  .navigation-container .navigation-item {
+    font-size: 16px;
+    margin: 0px 5px; }
+  .hello-title {
+    font-size: 28px; }
+    .hello-title-catch {
+      font-size: 20px;
+      text-align: center; }
+  .button-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .button-container > * > a {
+      font-size: 14px; }
+  .button-more {
+    margin-bottom: 30px; }
+  .columns-half p {
+    margin: 0px;
+    font-size: 12px; }
+  .text-title {
+    font-size: 24px; }
+  .table-cell {
+    font-size: 12px; }
+  .order .columns {
+    width: 100%; }
+  .button-send-order {
+    font-size: 14px !important; } }

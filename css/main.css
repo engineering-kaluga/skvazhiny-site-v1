@@ -513,17 +513,27 @@ body {
     -webkit-box-shadow: 4px 4px 4px black;
             box-shadow: 4px 4px 4px black; }
   .button-container .button-more a {
-    background-color: #00001f; }
+    background-color: #00001f;
+    -webkit-transition: background-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
     .button-container .button-more a:hover {
       background-color: #000085;
-      -webkit-box-shadow: 2px 2px 2px black;
-              box-shadow: 2px 2px 2px black; }
+      -webkit-box-shadow: 1px 1px 2px black;
+              box-shadow: 1px 1px 2px black; }
   .button-container .button-order a {
-    background-color: #00af00; }
+    background-color: #00af00;
+    -webkit-transition: background-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
     .button-container .button-order a:hover {
       background-color: #16ff16;
-      -webkit-box-shadow: 2px 2px 2px black;
-              box-shadow: 2px 2px 2px black; }
+      -webkit-box-shadow: 1px 1px 2px black;
+              box-shadow: 1px 1px 2px black; }
 
 .text {
   padding: 20px 0px;
@@ -667,7 +677,13 @@ body {
   background-color: #00af00;
   max-width: 100%;
   color: white;
-  text-shadow: 1px 1px 1px gray; }
+  text-shadow: 1px 1px 2px #00001f; }
+  .order .text-title {
+    color: white;
+    text-align: center;
+    text-shadow: none;
+    padding-top: 20px;
+    text-shadow: 1px 1px 2px #00001f; }
   .order .columns {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -678,7 +694,7 @@ body {
     margin-top: 20px; }
   .order ul {
     margin: 0px;
-    list-style: none; }
+    list-style: disclosure-closed; }
     .order ul p:first-child {
       margin-top: 0px; }
   .order form {
@@ -716,7 +732,7 @@ body {
           -ms-flex-item-align: center;
               align-self: center; }
       .order form .button-wrap .button-send-order {
-        font-size: 18px;
+        font-size: 20px;
         text-transform: uppercase;
         color: white;
         padding: 20px 20px;
@@ -779,9 +795,13 @@ body {
     font-size: 14px; } }
 
 @media only screen and (max-width: 480px) {
+  .hello {
+    background-position: center; }
   .navigation-container .navigation-item {
     font-size: 16px;
     margin: 0px 5px; }
+  .navigation-container .navigation-item:last-child {
+    margin-right: 5px; }
   .hello-title {
     font-size: 28px; }
     .hello-title-catch {

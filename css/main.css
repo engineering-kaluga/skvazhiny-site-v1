@@ -664,7 +664,8 @@ body {
   margin-top: 0px; }
 
 .cell-indented > p {
-  padding-left: 1em; }
+  padding-left: 1em;
+  margin: 0px; }
 
 .table-cell {
   font-size: 14px;

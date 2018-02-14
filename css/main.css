@@ -773,6 +773,29 @@ body {
       margin-right: 20px;
       width: auto; }
 
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  color: white;
+  padding: 20px 8% 20px 8%; }
+  .footer a {
+    color: white;
+    max-width: 60%; }
+  .footer p {
+    margin: 0; }
+
 @media only screen and (max-width: 990px) {
   .hello-title {
     text-align: center; } }
